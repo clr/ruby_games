@@ -3,7 +3,7 @@ require File.join( File.dirname(__FILE__), '..', '..', 'spec_helper' )
 
 # Pull in all the Ruby files in this directory.
 Dir.glob( File.join( File.dirname(__FILE__), '*.rb' ) ).each do |file|
-  require file
+  require file unless file.match /_spec.rb$/
 end
 
 # Our spec for an Array of Integers.  Specifically,
