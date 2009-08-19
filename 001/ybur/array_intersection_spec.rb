@@ -11,8 +11,8 @@ end
 # elements that are common to two different arrays.
 describe IntegerArray do
 
-  array_1 = Array.new( 100000, rand( 1000000 ) ).uniq
-  array_2 = Array.new( 100000, rand( 1000000 ) ).uniq
+  array_1 = Array.new( 100000 ).collect{ rand( 1000000 ) }.uniq
+  array_2 = Array.new( 100000 ).collect{ rand( 1000000 ) }.uniq
   
   it "should have the same exact result set as the internal Ruby method" do
     
@@ -25,6 +25,7 @@ describe IntegerArray do
     end
     
     @result.length.should eql( @control_group.length )
+    @result.sort.should ==( @control_group.sort )
   end
 
 end 
