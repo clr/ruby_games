@@ -21,6 +21,7 @@ describe RomanNumeral do
 
     @reports << Benchmark.measure do
       ( RomanNumeral.new( "MCMXCVI" ) + RomanNumeral.new( "XIV" ) ).should eql( "MMX" )
+      ( RomanNumeral.new( "MMX" ) - RomanNumeral.new( "XIV" ) ).should eql( "MCMXCVI" )
     end
   end
 
