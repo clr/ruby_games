@@ -1,6 +1,6 @@
 class WideFinder
 
-  def initialize( )
+  def initialize( findee )
   end
 
   def results
