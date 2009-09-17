@@ -26,7 +26,7 @@ describe WideFinder do
 
     @reports << Benchmark.measure do
       sample = WideFinder.new( '003/raw_data.log' )
-      sample.results.should eql( ["11101: /search/image_set/20", "8505: /search/image_set/40", "5263: /javascripts/jquery.js", "5257: /javascripts/jquery-ui.js", "5215: /javascripts/application.js", "5215: /javascripts/jrails.js", "5022: /images/logo.png", "3755: /stylesheets/main.css", "3358: /images/footer/jpl.png", "3358: /images/footer/ssc.png"] )
+      sample.results.should eql( ["11101: /search/image_set/20", "8505: /search/image_set/40", "5263: /javascripts/jquery.js", "5257: /javascripts/jquery-ui.js" ] )
     end
 
   end
