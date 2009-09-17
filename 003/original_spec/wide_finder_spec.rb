@@ -25,7 +25,8 @@ describe WideFinder do
   it "should compute simple arithmatic" do
 
     @reports << Benchmark.measure do
-      sample = WideFinder.new( '../../raw_data.log' )
+      sample = WideFinder.new( '003/raw_data.log' )
+      sample.results.should eql( ["3172: /images/background.jpg", "3152: /images/background-subnav.jpg", "3151: /images/banner.jpg", "3133: /images/logo.png", "2736: /images/background-nav.png", "2374: /javascripts/wymeditor/skins/default/skin.css", "2341: /flash/player.swf", "1999: /images/icon-brown-blue-arrow.png", "1869: /images/icon-black-purple-arrow.png", "1743: /images/rickets/blue/ext_input.png"] )
     end
 
   end
