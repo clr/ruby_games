@@ -1,0 +1,589 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSolutionCharts (20091020235036)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("solution_charts")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (923.8ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-20 21:32:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/prototype.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-20 21:32:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-20 21:32:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effects.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-20 21:34:03) [GET]
+  [4;36;1mSolutionChart Load (0.5ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 41ms (View: 35, DB: 1) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-20 21:35:25) [GET]
+  [4;35;1mSolutionChart Load (0.4ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:13:11) [GET]
+  [4;36;1mSolutionChart Load (0.4ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:13:54) [GET]
+  [4;35;1mSolutionChart Load (0.4ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:13:56) [GET]
+  [4;36;1mSolutionChart Load (0.4ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:14:03) [GET]
+  [4;35;1mSolutionChart Load (0.3ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:17:18) [GET]
+  [4;36;1mSolutionChart Load (0.4ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:19:40) [GET]
+  [4;35;1mSolutionChart Load (0.3ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:22:45) [GET]
+  [4;36;1mSolutionChart Load (0.4ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/solution_charts]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.6ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 14:44:48) [GET]
+  [4;35;1mSolutionChart Load (0.4ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/solution_charts]
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(7, '2009-10-21 19:01:02', 'one', 'blue', 0, 3, '2009-10-21 19:01:02')[0m
+  [4;35;1mSolutionChart Create (1.0ms)[0m   [0mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 19:01:25', 'two', 'red', 1, 4, '2009-10-21 19:01:25')[0m
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:04:12) [GET]
+  [4;36;1mSolutionChart Load (0.7ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+ERROR: compiling _run_erb_app47views47solution_charts47index46html46erb RAISED compile error
+/home/clr/ruby/rails/prime_find_server/app/views/solution_charts/index.html.erb:20: syntax error
+/home/clr/ruby/rails/prime_find_server/app/views/solution_charts/index.html.erb:22: syntax error
+Function body:           def _run_erb_app47views47solution_charts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Current Results</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "<div id=\"placeholder\" style=\"width:600px;height:300px;\"></div>\n"
+ javascript_tag do 
+@output_buffer.concat "$(function () {\n"
+@output_buffer.concat "    var data_array = [];\n"
+@output_buffer.concat "\n"
+ @solution_charts.each_with_index do |solution, i| 
+@output_buffer.concat "      var d = [ [ "; @output_buffer.concat(( i + i * 2 ).to_s); @output_buffer.concat ", "; @output_buffer.concat(( solution.failure_count ).to_s); @output_buffer.concat " ], [ "; @output_buffer.concat(( 1 + i + i * 2 ).to_s); @output_buffer.concat ", "; @output_buffer.concat(( solution.pending_count ).to_s); @output_buffer.concat " ], [ "; @output_buffer.concat(( 2 + i + i * 2 ).to_s); @output_buffer.concat ", "; @output_buffer.concat(( solution.solution_count ).to_s); @output_buffer.concat " ] ];\n"
+@output_buffer.concat "      data_array.push( d );\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "    $.plot($(\"#placeholder\"), [ \n"
+@output_buffer.concat "      { data: data_array,\n"
+@output_buffer.concat "        bars: { show: true } } ] );\n"
+@output_buffer.concat "});\n"
+ end 
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/clr/ruby/rails/prime_find_server/app/views/solution_charts/index.html.erb:22:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/clr/ruby/rails/prime_find_server/app/controllers/solution_charts_controller.rb:7:in `index'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/clr/ruby/rails/prime_find_server/app/views/solution_charts/index.html.erb:20: syntax error
+/home/clr/ruby/rails/prime_find_server/app/views/solution_charts/index.html.erb:22: syntax error) on line #20 of app/views/solution_charts/index.html.erb:
+17: });
+18: <% end -%>
+
+    app/views/solution_charts/index.html.erb:22:in `compile!'
+    app/controllers/solution_charts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:04:32) [GET]
+  [4;35;1mSolutionChart Load (0.7ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 80ms (View: 10, DB: 1) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:06:42) [GET]
+  [4;36;1mSolutionChart Load (0.7ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:10:59) [GET]
+  [4;35;1mSolutionChart Load (0.7ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/solution_charts]
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:15:04) [GET]
+  [4;36;1mSolutionChart Load (0.7ms)[0m   [0;1mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/solution_charts]
+  [4;36;1mSolutionChart Create (1.0ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(10, '2009-10-21 19:15:33', 'three', 'purplo', 11, 14, '2009-10-21 19:15:33')[0m
+
+
+Processing SolutionChartsController#index (for 127.0.0.1 at 2009-10-21 15:15:35) [GET]
+  [4;35;1mSolutionChart Load (0.8ms)[0m   [0mSELECT * FROM "solution_charts" [0m
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/solution_charts]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "solution_charts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "team" varchar(255), "color" varchar(255), "solution_count" integer, "failure_count" integer, "pending_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091020235036')[0m

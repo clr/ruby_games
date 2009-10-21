@@ -1,0 +1,198 @@
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 00:22:03', 'value for team', 'value for color', 1, 1, '2009-10-21 00:22:03')[0m
+Rendering solution_charts/index.html.erb
+Rendering solution_charts/show.html.erb
+Rendering solution_charts/new.html.erb
+Rendering solution_charts/edit.html.erb
+
+
+Processing SolutionChartsController#destroy (for 0.0.0.0 at 2009-10-20 20:22:03) [DELETE]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/destroy
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/37]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SolutionChartsController#destroy (for 0.0.0.0 at 2009-10-20 20:22:03) [DELETE]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/destroy
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/1]
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"37", "solution_chart"=>{"these"=>"params"}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/37?solution_chart%5Bthese%5D=params]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/1]
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/1]
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"37", "solution_chart"=>{"these"=>"params"}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/37?solution_chart%5Bthese%5D=params]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/1]
+
+
+Processing SolutionChartsController#update (for 0.0.0.0 at 2009-10-20 20:22:03) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/update
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/1]
+
+
+Processing SolutionChartsController#create (for 0.0.0.0 at 2009-10-20 20:22:03) [POST]
+  Parameters: {"solution_chart"=>{"these"=>"params"}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/create
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts?solution_chart%5Bthese%5D=params]
+
+
+Processing SolutionChartsController#create (for 0.0.0.0 at 2009-10-20 20:22:03) [POST]
+  Parameters: {"solution_chart"=>{}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/create
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts?]
+
+
+Processing SolutionChartsController#create (for 0.0.0.0 at 2009-10-20 20:22:03) [POST]
+  Parameters: {"solution_chart"=>{"these"=>"params"}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/create
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts?solution_chart%5Bthese%5D=params]
+
+
+Processing SolutionChartsController#create (for 0.0.0.0 at 2009-10-20 20:22:03) [POST]
+  Parameters: {"solution_chart"=>{}}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/create
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts?]
+
+
+Processing SolutionChartsController#edit (for 0.0.0.0 at 2009-10-20 20:22:03) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts/37/edit]
+
+
+Processing SolutionChartsController#new (for 0.0.0.0 at 2009-10-20 20:22:03) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts/new]
+
+
+Processing SolutionChartsController#show (for 0.0.0.0 at 2009-10-20 20:22:03) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/solution_charts
+Rendering solution_charts/show
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts/37]
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-20 20:22:03) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts]
+  [4;36;1mSolutionChart Create (0.5ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 00:22:47', 'value for team', 'value for color', 1, 1, '2009-10-21 00:22:47')[0m
+Rendering solution_charts/index.html.erb
+Rendering solution_charts/new.html.erb
+Rendering solution_charts/edit.html.erb
+Rendering solution_charts/show.html.erb
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-20 20:22:47) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts]
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 00:30:51', 'value for team', 'value for color', 1, 1, '2009-10-21 00:30:51')[0m
+Rendering solution_charts/index.html.erb
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-20 20:30:51) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts]
+  [4;36;1mSolutionChart Create (0.7ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 01:02:33', 'value for team', 'value for color', 1, 1, '2009-10-21 01:02:33')[0m
+Rendering solution_charts/index.html.erb
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-20 21:02:33) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts]
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 18:23:29', 'value for team', 'value for color', 1, 1, '2009-10-21 18:23:29')[0m
+Rendering solution_charts/index.html.erb
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-21 14:23:29) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/solution_charts]
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 18:31:38', 'value for team', 'value for color', 1, 1, '2009-10-21 18:31:38')[0m
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-21 14:31:38) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/solution_charts]
+Rendering solution_charts/index.html.erb
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 18:37:17', 'value for team', 'value for color', 1, 1, '2009-10-21 18:37:17')[0m
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-21 14:37:17) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/solution_charts]
+Rendering solution_charts/index.html.erb
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 18:38:20', 'value for team', 'value for color', 1, 1, '2009-10-21 18:38:20')[0m
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-21 14:38:20) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/solution_charts]
+Rendering solution_charts/index.html.erb
+  [4;36;1mSolutionChart Create (0.6ms)[0m   [0;1mINSERT INTO "solution_charts" ("pending_count", "updated_at", "team", "color", "failure_count", "solution_count", "created_at") VALUES(1, '2009-10-21 20:00:56', 'value for team', 'value for color', 1, 1, '2009-10-21 20:00:56')[0m
+Rendering solution_charts/index.html.erb
+
+
+Processing SolutionChartsController#index (for 0.0.0.0 at 2009-10-21 16:00:56) [GET]
+Rendering template within layouts/solution_charts
+Rendering solution_charts/index
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/solution_charts]
